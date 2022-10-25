@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, rgba(56,138,226,0.8239670868347339) 30%, rgba(176,186,47,0.7175245098039216) 60%);
+
+  @media screen and (max-width: 700px){
+    width: 100%;
+  }
+
+  input {
+    width: 90%;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  s, h2 {
+    font-size: 20px;
+    padding: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+
+  div {
+    display: flex;
+    gap: 0 15px;
+
+    button {
+      border: none;
+    }
+
+    svg {
+      font-size: 20px;
+
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+
+}

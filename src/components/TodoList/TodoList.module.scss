@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.todoList {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+
+  @media screen and (max-width: 700px){
+    width: 95%;
+  }
+}

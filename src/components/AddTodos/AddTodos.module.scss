@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.form {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+
+  input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 70px 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: $transition5;
+    box-shadow: inset 0 0 5px $colorBlack;
+
+    &:focus {
+      box-shadow: 0 0 10px 1000px rgba(0,0,0, .5);
+    }
+  }
+
+  button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    font-size: 15px;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    box-shadow: 0 0 10px $colorBlack;
+    transition: $transition5;
+
+    &:hover {
+      background-color: $colorPrimaryLighter;
+    }
+
+    &:active {
+      box-shadow: 0 0 5px $colorBlack;
+      transform: scale(.8);
+    }
+  }
+}
