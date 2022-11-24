@@ -4,14 +4,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
   border-radius: 5px;
   padding: 20px;
-  margin-top: 15px;
   background: linear-gradient(90deg, rgba(56,138,226,0.8239670868347339) 30%, rgba(176,186,47,0.7175245098039216) 60%);
+
+  &:hover {
+    box-shadow: 1px 1px 1px 1px $colorBlack;
+    transform: scale(1.01);
+  }
 
   @media screen and (max-width: 700px){
     width: 100%;
+  }
+
+  &_drag {
+    box-shadow: 0 0 20px $colorBlack;
   }
 
   input {
